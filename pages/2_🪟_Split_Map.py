@@ -30,7 +30,7 @@ st.title("Split-panel Map")
 
 m = leafmap.Map(center=[0, 0], zoom=2)
 
-url = "/media/laura/Extreme SSD/code/fvc_webapp/dataset/annotation_geojson/mask_fvc_3072.16.geojson"
+url = "https://huggingface.co/datasets/lauransotomayor/eco_composition/raw/main/mask_fvc_3072.16.geojson"
 
 
 style = {
