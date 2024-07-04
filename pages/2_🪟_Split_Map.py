@@ -1,5 +1,6 @@
 import streamlit as st
 import leafmap.foliumap as leafmap
+import random
 
 st.set_page_config(layout="wide")
 
@@ -25,11 +26,11 @@ st.title("Split-panel Map")
 #         m.add_legend(title="ESA Land Cover", builtin_legend="ESA_WorldCover")
 
 # m.to_streamlit(height=700)
-import random
+
 
 m = leafmap.Map(center=[0, 0], zoom=2)
 
-url = "https://github.com/LNSOTOM/fvc_webapp/blob/main/dataset/annotation_shp/mask_fvc_3072.22.shp"
+url = "https://github.com/LNSOTOM/fvc_webapp/blob/main/dataset/annotation_geojson/mask_fvc_3072.16.geojson"
 
 
 def random_color(feature):
@@ -39,5 +40,5 @@ def random_color(feature):
     }
 
 
-m.add_shp(url, layer_name="class", style_callback=random_color)
+m.add_geojson(url, layer_name="class", style_callback=random_color)
 m
