@@ -39,5 +39,5 @@ def random_color(feature):
     }
 
 
-m.add_geojson(url, layer_name="Countries", style_callback=random_color)
+m.add_geojson(url, layer_name="class", style_callback=random_color)
 m
