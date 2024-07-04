@@ -11,7 +11,7 @@ Laura N. Sotomayor
 
 st.sidebar.title("About")
 st.sidebar.info(markdown)
-logo = "assets/instagram _1.png"
+logo = "assets/sotomayorstudio_flir.jpg"
 st.sidebar.image(logo)
 
 st.title("Interactive Map")
