@@ -5,17 +5,17 @@ st.set_page_config(layout="wide")
 
 # Customize the sidebar
 markdown = """
-A Streamlit map template
-<https://github.com/opengeos/streamlit-map-template>
+Laura N. Sotomayor
+<https://x.com/lauransotomayor>
 """
 
 st.sidebar.title("About")
 st.sidebar.info(markdown)
-logo = "https://i.imgur.com/UbOXYAU.png"
+logo = "assets/sotomayorstudio_flir.jpg"
 st.sidebar.image(logo)
 
 # Customize page title
-st.title("Streamlit for Geospatial Applications")
+st.title("Deriving fractional vegetation cover from uncrewed aerial systems")
 
 st.markdown(
     """
