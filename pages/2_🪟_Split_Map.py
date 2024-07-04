@@ -33,12 +33,17 @@ m = leafmap.Map(center=[0, 0], zoom=2)
 url = "https://github.com/LNSOTOM/fvc_webapp/blob/main/dataset/annotation_geojson/mask_fvc_3072.16.geojson"
 
 
-def random_color(feature):
-    return {
-        "color": "black",
-        "fillColor": random.choice(["red", "yellow", "green", "orange"]),
-    }
+style = {
+    "stroke": True,
+    "color": "#0000ff",
+    "weight": 2,
+    "opacity": 1,
+    "fill": True,
+    "fillColor": "#0000ff",
+    "fillOpacity": 0.1,
+}
 
+hover_style = {"fillOpacity": 0.7}
 
-m.add_geojson(url, layer_name="class", style_callback=random_color)
+m.add_geojson(url, layer_name="class", style=style, hover_style=hover_style)
 m
