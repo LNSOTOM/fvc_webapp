@@ -29,7 +29,7 @@ import random
 
 m = leafmap.Map(center=[0, 0], zoom=2)
 
-url = "https://huggingface.co/datasets/lauransotomayor/eco_composition/raw/ac7a8c2c7bb97eb019f76c8ae14d0e9f4b3267dd/mask_fvc_3072.geojson"
+url = "https://huggingface.co/datasets/lauransotomayor/eco_composition/raw/main/mask_fvc_3072.16.shp"
 
 
 def random_color(feature):
@@ -39,5 +39,5 @@ def random_color(feature):
     }
 
 
-m.add_geojson(url, layer_name="class", style_callback=random_color)
+m.add_shp(url, layer_name="class", style_callback=random_color)
 m
