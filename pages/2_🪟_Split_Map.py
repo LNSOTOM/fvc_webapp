@@ -29,7 +29,7 @@ import random
 
 m = leafmap.Map(center=[0, 0], zoom=2)
 
-url = "/media/laura/Extreme SSD/code/fvc_webapp/assets/annotation_shp/mask_fvc_3072.22.shp"
+url = "https://github.com/LNSOTOM/fvc_webapp/blob/main/dataset/annotation_shp/mask_fvc_3072.22.shp"
 
 
 def random_color(feature):
